@@ -1,0 +1,27 @@
+[
+  {
+    "name" : "Folder 1",
+    "children" : [
+      { "name" : "File1"},
+      { "name" : "File2"},
+      { "name" : "File3"},
+      { "name" : "Folder 1.1", 
+        "children" : [
+          { "name" : "File1.2"},
+          { "name" : "File1.3"}
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "Folder 2",
+    "children" : []
+  },
+  {
+    "name" : "Folder 3",
+    "children" : [
+      { "name" : "File3.2"},
+      { "name" : "File3.3"}
+    ]
+  }
+]

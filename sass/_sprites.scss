@@ -1,0 +1,13 @@
+@import "compass/utilities/sprites";
+
+$tree-sprite-dimensions: true;
+@import "tree/*.png";
+@include all-tree-sprites;
+
+.tree-line-horizontal{
+  background-repeat: repeat-x;
+}
+
+.tree-line-vertical{
+  background-repeat: repeat-y;
+}

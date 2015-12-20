@@ -1,0 +1,29 @@
+@import "compass";
+
+
+@import "compass/reset";
+@import "sprites";
+
+.tree-sprite{
+  display: inline-block;
+}
+
+.tree-folder, .tree-folder-open{
+  cursor: pointer;
+}
+
+.tree-view{
+  li{
+    padding: 2px;
+
+    & i{
+      margin: 0 6px;
+    }
+
+    &, & i {
+      vertical-align : top;
+      line-height    : 28px;
+      height         : 22px;
+    }
+  }
+}
