@@ -23,11 +23,13 @@ TreeModel.prototype = {
         return this.nodes;
     },
     getPath: function(elem){
-        var path = elem.text();
+        var path = elem.children('.title').text();
         var elem = elem.parent();
 
-        while(!elem.hasClass('tree-view')){
-            path = elem.text() + '/' + path;
+        while(!elem.is(this.element)){
+            if(elem.is('li.tree-dir')){
+                path = elem.children('.title').text() + '/' + path;
+            }
             elem = elem.parent();
         }
 
@@ -35,9 +37,15 @@ TreeModel.prototype = {
     },
     loadSingleNode: function(nodeStr){
         var nodes = nodeStr.trim().split('/');
-        var aux;
-        for(var i=0; i < nodes.length; i++)
-            aux = _.find(this.nodes, {name: nodes[i]});
+        var aux = _.find(this.nodes, {name: nodes[0]});
+
+        console.log(aux)
+        console.log(nodes)
+        for(var i=1; i < nodes.length; i++)
+            if(aux.children)
+                aux = _.find(aux.children, {name: nodes[i]});
+
+        return aux;
     },
 
     loadNodes: function(){

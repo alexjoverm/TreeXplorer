@@ -3,6 +3,30 @@
     "name" : "Folder 1",
     "children" : [
       { "name" : "File1"},
+      { "name" : "Folder 1.4",
+        "children" : [
+          { "name" : "File1.7"},
+          { "name" : "File1.6"},
+          { "name" : "Folder 5.1",
+            "children" : [
+              { "name" : "File2.2"},
+              { "name" : "File3.3"},
+              { "name" : "Folder 1.1",
+                "children" : [
+                  { "name" : "File1.2"},
+                  { "name" : "File1.3"}
+                ]
+              }
+            ]
+          },
+          { "name" : "Folder 1.1",
+            "children" : [
+              { "name" : "File1.2"},
+              { "name" : "File1.3"}
+            ]
+          }
+        ]
+      },
       { "name" : "File2"},
       { "name" : "File3"},
       { "name" : "Folder 1.1", 
@@ -21,7 +45,55 @@
     "name" : "Folder 3",
     "children" : [
       { "name" : "File3.2"},
-      { "name" : "File3.3"}
+      { "name" : "File3.3"},
+      { "name" : "Folder 1.4",
+        "children" : [
+          { "name" : "File1.7"},
+          { "name" : "File1.6"},
+          { "name" : "Folder 5.1",
+            "children" : [
+              { "name" : "File2.2"},
+              { "name" : "File3.3"},
+              { "name" : "Folder 1.1",
+                "children" : [
+                  { "name" : "File1.2"},
+                  { "name" : "File1.3"}
+                ]
+              },
+              { "name" : "Folder 1.4",
+                "children" : [
+                  { "name" : "File1.7"},
+                  { "name" : "File1.6"},
+                  { "name" : "Folder 5.1",
+                    "children" : [
+                      { "name" : "File2.2"},
+                      { "name" : "File3.3"},
+                      { "name" : "Folder 1.1",
+                        "children" : [
+                          { "name" : "File1.2"},
+                          { "name" : "File1.3"}
+                        ]
+                      }
+                    ]
+                  },
+                  { "name" : "Folder 1.1",
+                    "children" : [
+                      { "name" : "File1.2"},
+                      { "name" : "File1.3"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          { "name" : "Folder 1.1",
+            "children" : [
+              { "name" : "File1.2"},
+              { "name" : "File1.3"}
+            ]
+          }
+        ]
+      }
     ]
   }
 ]

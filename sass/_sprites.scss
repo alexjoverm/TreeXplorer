@@ -1,13 +1,66 @@
-@import "compass/utilities/sprites";
+//@import "compass/utilities/sprites";
+//
+//$tree-sprite-dimensions: true;
+//@import "tree/*.png";
+//@include all-tree-sprites;
 
-$tree-sprite-dimensions: true;
-@import "tree/*.png";
-@include all-tree-sprites;
+//***** Generated sprites
+
+.tree-sprite, .tree-file, .tree-folder-open, .tree-folder, .tree-line-bi-junction, .tree-line-horizontal, .tree-line-tri-junction, .tree-line-vertical, .bg-line-vertical {
+  background-image: url('../images/tree-sprite.png');
+  background-repeat: no-repeat;
+}
+
+.tree-file {
+  background-position: 0 0;
+  height: 22px;
+  width: 20px;
+}
+
+.tree-folder-open {
+  background-position: 0 -22px;
+  height: 22px;
+  width: 27px;
+}
+
+.tree-folder {
+  background-position: 0 -44px;
+  height: 22px;
+  width: 20px;
+}
+
+.tree-line-bi-junction {
+  background-position: 0 -66px;
+  height: 4px;
+  width: 4px;
+}
+
+.tree-line-horizontal {
+  background-position: 0 -70px;
+  height: 2px;
+  width: 100px;
+}
+
+.tree-line-tri-junction {
+  background-position: 0 -72px;
+  height: 6px;
+  width: 4px;
+}
+
+.tree-line-vertical {
+  background-position: 0 -78px;
+  height: 100px;
+  width: 2px;
+}
+
+
+//***** Custom sprite classes
 
 .tree-line-horizontal{
   background-repeat: repeat-x;
 }
 
-.tree-line-vertical{
+.bg-line-vertical{
+  background-image: url('../images/tree-sprite.png');
   background-repeat: repeat-y;
 }
