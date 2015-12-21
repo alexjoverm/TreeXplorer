@@ -80,7 +80,7 @@ gulp.task('watchify', function(){
 });
 
 gulp.task('watch', function () {
-    watch(['./*.html', './js/*.js']).pipe(connect.reload());
+    watch(['./*.html', './js/*.js', './lib/*.js']).pipe(connect.reload());
     watch('./sass/**/*.scss', runCompass);
 });
 

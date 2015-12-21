@@ -110,6 +110,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: repeat-y;
 }
 
+main div {
+  float: left;
+  width: 50%;
+}
+main #tree1 {
+  background: #e5ffe5;
+}
+main #tree2 {
+  background: #eeeeff;
+}
+
 .tree-sprite {
   display: inline-block;
 }
