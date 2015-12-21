@@ -1,5 +1,7 @@
 # TreeXplorer
 
+![img](https://github.com/alexjoverm/TreeXplorer/blob/master/screenshot.png)
+
 A self-made web-based File Explorer made in Javascript. It is made for fun to help anybody working with MVC, DOM manipulation and
 the difficulty to deal with background images to show a line structure.
 
